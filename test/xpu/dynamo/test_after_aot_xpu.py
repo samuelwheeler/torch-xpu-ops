@@ -12,8 +12,8 @@ import unittest
 from types import SimpleNamespace
 from unittest.mock import patch
 
-sys.path.append("../../test/dynamo")
-sys.path.append("../../test/inductor")
+sys.path.append("../../../../test/dynamo")
+sys.path.append("../../../../test/inductor")
 
 import torch._dynamo.test_case
 from torch._dynamo.repro import after_aot
