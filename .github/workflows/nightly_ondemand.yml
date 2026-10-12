@@ -93,7 +93,7 @@ jobs:
               test_type="wheel-weekly"
               pytorch="nightly_wheel"
               torch_xpu_ops="pinned"
-              ut="${ut%]},\"xpu_distributed_weekly\"]"
+              ut="${ut/xpu_distributed/xpu_distributed_weekly}"
             else
               echo "No such scheduler: ${{ github.event.schedule }}"
               exit 1
